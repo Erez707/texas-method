@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TexasMethodNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  }
 
   ngOnInit(): void {
   }

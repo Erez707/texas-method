@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { FutureWorkoutCalendarComponent } from './future-workout-calendar/future
 import { WorkoutFormComponent } from './workout-form/workout-form.component';
 import { MovementTypeComponent } from './movement-type/movement-type.component';
 import { MovementModalComponent } from './movement-modal/movement-modal.component';
+
+import {SidebarModule} from 'primeng/sidebar';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { MovementModalComponent } from './movement-modal/movement-modal.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
