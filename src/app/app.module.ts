@@ -12,7 +12,10 @@ import { WorkoutFormComponent } from './workout-form/workout-form.component';
 import { MovementTypeComponent } from './movement-type/movement-type.component';
 import { MovementModalComponent } from './movement-modal/movement-modal.component';
 
+import { NgChartsModule } from 'ng2-charts';
+
 import {SidebarModule} from 'primeng/sidebar';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import {SidebarModule} from 'primeng/sidebar';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SidebarModule
+    NgChartsModule,
+    SidebarModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

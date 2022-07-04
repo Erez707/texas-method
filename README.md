@@ -103,7 +103,12 @@ TODO:
 			- navbar component
 			- router-outlet
 				-> the routes will be to the overview component and the workout-form component
+
+7/4/2022 
+Start with reading chart.js documentation at https://www.chartjs.org/docs/latest/getting-started/
+and ng2-charts https://github.com/valor-software/ng2-charts 
 		
+AdobeXD: https://xd.adobe.com/view/d2ecfc4f-a544-4c22-b8c2-00a13751b83c-87bf/ 
 
 
 
