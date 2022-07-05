@@ -29,12 +29,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Notes
 
 main (overview) page
-	There will be 3 charts and they will have an x-axis representing time (in days)
-	and a y-axis representing intensity. one chart for each exercise:
-		1 volume day
-		1 light day 
-		1 intensity day
-	Each chart will have a line for each exercise type (different color for each type):
+	There will be 1 chart and it will have an x-axis representing time (in days)
+	and a y-axis representing intensity.
+
+	The chart will have a line for each exercise type (different color for each type):
 		Squat
 		OHP
 		Behind-Neck OHP
@@ -89,10 +87,10 @@ workout-form component
 TODO:
 
 still need to add a login page (for now something simple locally - maybe use jwt for IAM)
-database (for now just a json object locally
+database (for now just a json object locally)
 
-later add authentication and authorization with auth0
-and database with apache cassandra
+later add authentication and authorization with aws cognito
+and database with aws amplify
 
 --------------------------------------------------------------------------------------------------
 
@@ -104,14 +102,22 @@ TODO:
 			- router-outlet
 				-> the routes will be to the overview component and the workout-form component
 
-7/4/2022 
-Start with reading chart.js documentation at https://www.chartjs.org/docs/latest/getting-started/
-and ng2-charts https://github.com/valor-software/ng2-charts 
+
+chart.js documentation at https://www.chartjs.org/docs/latest/getting-started/
+ng2-charts https://github.com/valor-software/ng2-charts 
 		
 AdobeXD: https://xd.adobe.com/view/d2ecfc4f-a544-4c22-b8c2-00a13751b83c-87bf/ 
 
 
+TODO Today - 7/4/2022: 
 
+changing back a starting strength workout
+  implement the chart (one single chart) with each movement type having a single line
+    read ng2-charts, then read chart.js documentation
+
+design and implement backend (database) with AWS Amplify
+
+Add login and register and connect app with AWS Cognito
 
 
 
