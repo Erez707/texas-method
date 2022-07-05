@@ -53,17 +53,160 @@ export class WorkoutChartComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.getMockDatabaseLength();
+  }
+
+  getMockDatabaseLength() {
+    let object = this.setMockDatabase();
+    console.log(object);
   }
 
   setMockDatabase(): any {
     let mockDatabase = {
 
-      WorkoutDate: '',
-      WorkoutType: '',
-      MovementType: '',
-      Sets: '',
-      Reps: '',
-      Weight: ''
+      Week1: {
+        Monday: {
+          Squat:  { 
+            WorkoutDate: '',
+            MovementType: 'Squat',
+            Sets: '5',
+            Reps: '5',
+            Weight: '200'
+          },
+          Deadlift: { 
+            WorkoutDate: '',
+            MovementType: 'Deadlift',
+            Sets: '1',
+            Reps: '5',
+            Weight: '220'
+          },
+          OHP:  { 
+            WorkoutDate: '',
+            MovementType: 'OHP',
+            Sets: '5',
+            Reps: '5',
+            Weight: '85'
+          }
+        },
+        Wednesday: {
+          Squat:  { 
+            WorkoutDate: '',
+            MovementType: 'Squat',
+            Sets: '5',
+            Reps: '5',
+            Weight: '205'
+          },
+          Pullups: { 
+            WorkoutDate: '',
+            MovementType: 'Pull-ups',
+            Sets: '5',
+            Reps: '5',
+            Weight: '0'
+          },
+          BehindNeckOHP:  { 
+            WorkoutDate: '',
+            MovementType: 'Behind-neck-OHP',
+            Sets: '5',
+            Reps: '5',
+            Weight: '70'
+          }
+        },
+        Friday: {
+          Squat:  { 
+            WorkoutDate: '',
+            MovementType: 'Squat',
+            Sets: '5',
+            Reps: '5',
+            Weight: '210'
+          },
+          Deadlift: { 
+            WorkoutDate: '',
+            MovementType: 'Deadlift',
+            Sets: '1',
+            Reps: '5',
+            Weight: '225'
+          },
+          OHP:  { 
+            WorkoutDate: '',
+            MovementType: 'OHP',
+            Sets: '5',
+            Reps: '5',
+            Weight: '95'
+          }
+        }
+      },
+      Week2: {
+        Monday: {
+          Squat:  { 
+            WorkoutDate: '',
+            MovementType: 'Squat',
+            Sets: '5',
+            Reps: '5',
+            Weight: '210'
+          },
+          Pullups: { 
+            WorkoutDate: '',
+            MovementType: 'Pull-ups',
+            Sets: '5',
+            Reps: '5',
+            Weight: '5'
+          },
+          BehindNeckOHP:  { 
+            WorkoutDate: '',
+            MovementType: 'Behind-neck-OHP',
+            Sets: '5',
+            Reps: '5',
+            Weight: '75'
+          }
+        },
+        Wednesday: {
+          Squat:  { 
+            WorkoutDate: '',
+            MovementType: 'Squat',
+            Sets: '5',
+            Reps: '5',
+            Weight: '215'
+          },
+          Deadlift: { 
+            WorkoutDate: '',
+            MovementType: 'Deadlift',
+            Sets: '1',
+            Reps: '5',
+            Weight: '230'
+          },
+          OHP:  { 
+            WorkoutDate: '',
+            MovementType: 'OHP',
+            Sets: '5',
+            Reps: '5',
+            Weight: '100'
+          }
+        },
+        Friday: {
+          Squat:  { 
+            WorkoutDate: '',
+            MovementType: 'Squat',
+            Sets: '5',
+            Reps: '5',
+            Weight: '220'
+          },
+          Pullups: { 
+            WorkoutDate: '',
+            MovementType: 'Pull-ups',
+            Sets: '5',
+            Reps: '5',
+            Weight: '10'
+          },
+          BehindNeckOHP:  { 
+            WorkoutDate: '',
+            MovementType: 'Behind-neck-OHP',
+            Sets: '5',
+            Reps: '5',
+            Weight: '80'
+          }
+        }
+      },
+      
     }
 
     return mockDatabase;

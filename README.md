@@ -58,7 +58,6 @@ main (overview) page
 			When selecting a movement type a modal with the movement type page will open
 			where he will be able to input the movement attributes:
 				Workout date: will be automatically filled in from the workout form date inputted
-				Workout type: volume, light or intensity days
 				Movement type: will be automatically filled in (from the selected movement type)
 				Sets
 				Reps
