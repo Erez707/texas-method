@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,8 +15,8 @@ import { MovementModalComponent } from './movement-modal/movement-modal.componen
 
 import { NgChartsModule } from 'ng2-charts';
 
-import {SidebarModule} from 'primeng/sidebar';
-import {ButtonModule} from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {ButtonModule} from 'primeng/button';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FullCalendarModule,
     AppRoutingModule,
     NgChartsModule,
     SidebarModule,
