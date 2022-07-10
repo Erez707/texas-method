@@ -56,8 +56,9 @@ export class WorkoutChartComponent implements OnInit {
     }
    }
 
-  ngOnInit(): void {}
-  //TODO: ******** fill the data for each movement in the chart
+  ngOnInit(): void {
+
+  }
 
   getMockDatabaseSetOfWorkoutDates() {
     let mockDatabase = this.setMockDatabase();
@@ -69,7 +70,7 @@ export class WorkoutChartComponent implements OnInit {
     for (let i = 0; i < mockDatabaseArray.length; i++) {
       const trainingWeek = mockDatabaseArray[i];
       let trainingWeekArray = Object.keys(mockDatabase[trainingWeek]); // displays an array with the first children's (workout days) keys as it's values
-      
+
       for (let j = 0; j < trainingWeekArray.length; j++) {
         const trainingDay = trainingWeekArray[j];
 
@@ -90,12 +91,12 @@ export class WorkoutChartComponent implements OnInit {
     for (let i = 0; i < mockDatabaseArray.length; i++) {
       const trainingWeek = mockDatabaseArray[i];
       let trainingWeekArray = Object.keys(mockDatabase[trainingWeek]); // displays an array with the first children's (workout days) keys as it's values
-      
+
       for (let j = 0; j < trainingWeekArray.length; j++) {
         const trainingDay = trainingWeekArray[j];
         let movementType = mockDatabase[trainingWeek][trainingDay][movement];
         if (movementType) { // not all days have the same workout (i.e. not all movement types exist in every training day)
-          dataArray.push(Number(movementType.Weight));          
+          dataArray.push(Number(movementType.Weight));
         } else {
           dataArray.push(null);
         }
@@ -111,19 +112,19 @@ export class WorkoutChartComponent implements OnInit {
       Week1: {
         Monday: {
           WorkoutDate: '7/4/2022',
-          Squat:  { 
+          Squat:  {
             MovementType: 'Squat',
             Sets: '5',
             Reps: '5',
             Weight: '200'
           },
-          Deadlift: { 
+          Deadlift: {
             MovementType: 'Deadlift',
             Sets: '1',
             Reps: '5',
             Weight: '220'
           },
-          OHP:  { 
+          OHP:  {
             MovementType: 'OHP',
             Sets: '5',
             Reps: '5',
@@ -132,19 +133,19 @@ export class WorkoutChartComponent implements OnInit {
         },
         Wednesday: {
           WorkoutDate: '7/6/2022',
-          Squat:  { 
+          Squat:  {
             MovementType: 'Squat',
             Sets: '5',
             Reps: '5',
             Weight: '205'
           },
-          PullUps: { 
+          PullUps: {
             MovementType: 'Pull-ups',
             Sets: '5',
             Reps: '5',
             Weight: '0'
           },
-          BehindNeckOHP:  { 
+          BehindNeckOHP:  {
             MovementType: 'Behind-neck-OHP',
             Sets: '5',
             Reps: '5',
@@ -153,19 +154,19 @@ export class WorkoutChartComponent implements OnInit {
         },
         Friday: {
           WorkoutDate: '7/8/2022',
-          Squat:  { 
+          Squat:  {
             MovementType: 'Squat',
             Sets: '5',
             Reps: '5',
             Weight: '210'
           },
-          Deadlift: { 
+          Deadlift: {
             MovementType: 'Deadlift',
             Sets: '1',
             Reps: '5',
             Weight: '225'
           },
-          OHP:  { 
+          OHP:  {
             MovementType: 'OHP',
             Sets: '5',
             Reps: '5',
@@ -176,19 +177,19 @@ export class WorkoutChartComponent implements OnInit {
       Week2: {
         Monday: {
           WorkoutDate: '7/11/2022',
-          Squat:  { 
+          Squat:  {
             MovementType: 'Squat',
             Sets: '5',
             Reps: '5',
             Weight: '210'
           },
-          PullUps: { 
+          PullUps: {
             MovementType: 'Pull-ups',
             Sets: '5',
             Reps: '5',
             Weight: '5'
           },
-          BehindNeckOHP:  { 
+          BehindNeckOHP:  {
             MovementType: 'Behind-neck-OHP',
             Sets: '5',
             Reps: '5',
@@ -197,19 +198,19 @@ export class WorkoutChartComponent implements OnInit {
         },
         Wednesday: {
           WorkoutDate: '7/13/2022',
-          Squat:  { 
+          Squat:  {
             MovementType: 'Squat',
             Sets: '5',
             Reps: '5',
             Weight: '215'
           },
-          Deadlift: { 
+          Deadlift: {
             MovementType: 'Deadlift',
             Sets: '1',
             Reps: '5',
             Weight: '230'
           },
-          OHP:  { 
+          OHP:  {
             MovementType: 'OHP',
             Sets: '5',
             Reps: '5',
@@ -218,19 +219,19 @@ export class WorkoutChartComponent implements OnInit {
         },
         Friday: {
           WorkoutDate: '7/15/2022',
-          Squat:  { 
+          Squat:  {
             MovementType: 'Squat',
             Sets: '5',
             Reps: '5',
             Weight: '220'
           },
-          PullUps: { 
+          PullUps: {
             MovementType: 'Pull-ups',
             Sets: '5',
             Reps: '5',
             Weight: '10'
           },
-          BehindNeckOHP:  { 
+          BehindNeckOHP:  {
             MovementType: 'Behind-neck-OHP',
             Sets: '5',
             Reps: '5',
@@ -238,7 +239,7 @@ export class WorkoutChartComponent implements OnInit {
           }
         }
       },
-      
+
     }
 
     return mockDatabase;
