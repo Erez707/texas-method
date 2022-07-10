@@ -15,12 +15,14 @@ import { MovementModalComponent } from './movement-modal/movement-modal.componen
 
 import { NgChartsModule } from 'ng2-charts';
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
+import interactionPlugin from '@fullcalendar/interaction';
 
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 
 FullCalendarModule.registerPlugins([
-  dayGridPlugin
+  dayGridPlugin,
+  interactionPlugin
 ])
 
 @NgModule({
