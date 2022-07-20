@@ -15,10 +15,17 @@ export class TexasMethodNavbarComponent implements OnInit {
   }
 
   /**
-   * @description Enables toggling between navbar options (i.e. overview page and workout-form)
+   * @description select overview page
    */
-  optionSelected() {
-    this.selected = !this.selected;
+   setSelectedTrue() {
+    this.selected = true;
+  }
+
+  /**
+   * @description select workout-form page
+   */
+   setSelectedFalse() {
+    this.selected = false;
   }
 
 }

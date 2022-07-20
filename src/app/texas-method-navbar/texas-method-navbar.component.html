@@ -5,10 +5,10 @@
 [dismissible]="false"
 [showCloseIcon]="false">
     <ul class="container">
-        <li class="tab" routerLink="/" [ngClass]="selected ? 'selected': ''" (click)="optionSelected()">
+        <li class="tab" routerLink="/" [ngClass]="selected ? 'selected': ''" (click)="setSelectedTrue()">
             <i class="pi pi-home"></i>
         </li>
-        <li class="tab" routerLink="/add-new-workout" [ngClass]="!selected ? 'selected': ''" (click)="optionSelected()">
+        <li class="tab" routerLink="/add-new-workout" [ngClass]="!selected ? 'selected': ''" (click)="setSelectedFalse()">
             <i class="pi pi-pencil"></i>
         </li>
     </ul>
