@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TexasMethodNavbarComponent implements OnInit {
 
-  constructor() {  }
+  selected: boolean = true;
+
+  constructor(  ) {  }
 
   ngOnInit(): void {
+  }
+
+  /**
+   * @description Enables toggling between navbar options (i.e. overview page and workout-form)
+   */
+  optionSelected() {
+    this.selected = !this.selected;
   }
 
 }

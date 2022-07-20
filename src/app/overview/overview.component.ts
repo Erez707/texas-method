@@ -9,7 +9,8 @@ import { CalendarOptions } from '@fullcalendar/angular';
 export class OverviewComponent implements OnInit {
 
   calendarOptions: CalendarOptions = {
-    initialView: 'dayGridMonth'
+    initialView: 'dayGridWeek',
+    contentHeight: 350
   };
 
   constructor() { }
