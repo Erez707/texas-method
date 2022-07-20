@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { OverviewComponent } from './overview/overview.component';
 import { WorkoutChartComponent } from './workout-chart/workout-chart.component';
 import { TexasMethodNavbarComponent } from './texas-method-navbar/texas-method-navbar.component';
-import { FutureWorkoutCalendarComponent } from './future-workout-calendar/future-workout-calendar.component';
 import { WorkoutFormComponent } from './workout-form/workout-form.component';
 import { MovementTypeComponent } from './movement-type/movement-type.component';
 import { MovementModalComponent } from './movement-modal/movement-modal.component';
@@ -31,7 +30,6 @@ FullCalendarModule.registerPlugins([
     OverviewComponent,
     WorkoutChartComponent,
     TexasMethodNavbarComponent,
-    FutureWorkoutCalendarComponent,
     WorkoutFormComponent,
     MovementTypeComponent,
     MovementModalComponent
