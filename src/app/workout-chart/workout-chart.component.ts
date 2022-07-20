@@ -102,7 +102,7 @@ export class WorkoutChartComponent implements OnInit {
         }
       }
     }
-    console.log("dataArray: ", dataArray);
+    // console.log("dataArray: ", dataArray);
     return dataArray;
   }
 

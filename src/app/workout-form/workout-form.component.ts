@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkoutFormComponent implements OnInit {
 
+  workoutDate: Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDateChange() {
+    console.log("workout Date: ", this.workoutDate);
   }
 
 }

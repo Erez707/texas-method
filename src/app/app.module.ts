@@ -18,6 +18,10 @@ import interactionPlugin from '@fullcalendar/interaction';
 
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
+import { DialogModule } from 'primeng/dialog';
+
+import { FormsModule } from '@angular/forms';
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
@@ -41,7 +45,10 @@ FullCalendarModule.registerPlugins([
     AppRoutingModule,
     NgChartsModule,
     SidebarModule,
-    ButtonModule
+    ButtonModule,
+    CalendarModule,
+    FormsModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
